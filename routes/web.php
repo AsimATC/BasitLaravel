@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\kontrol;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/homs', function () {
+    return view('home');
+});
+
+Route::get('/anasayfa', function () {
+    return "anasayf aaaa";
+});
+
+Route::get('/hakkimizda', 'kontrol@aboutus');
